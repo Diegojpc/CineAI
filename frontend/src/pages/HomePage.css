@@ -1,0 +1,60 @@
+.home { padding-bottom: var(--space-3xl); }
+.home__hero {
+  text-align: center; padding: var(--space-3xl) 0 var(--space-xl);
+}
+.home__hero-title {
+  font-size: var(--font-size-4xl); font-weight: 800; line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+.home__hero-accent {
+  background: var(--gradient-primary); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; background-clip: text;
+}
+.home__hero-subtitle {
+  font-size: var(--font-size-lg); color: var(--text-secondary); max-width: 500px;
+  margin: 0 auto;
+}
+.home__filters {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: var(--space-lg); margin-bottom: var(--space-lg); flex-wrap: wrap;
+}
+.home__genres {
+  display: flex; flex-wrap: wrap; gap: var(--space-xs); flex: 1;
+}
+.home__genre-btn {
+  padding: var(--space-xs) var(--space-md); border-radius: var(--radius-full);
+  font-size: var(--font-size-xs); font-weight: 500; color: var(--text-secondary);
+  background: var(--bg-glass); border: 1px solid var(--border-subtle);
+  transition: all var(--transition-fast); white-space: nowrap;
+}
+.home__genre-btn:hover { color: var(--text-primary); border-color: var(--border-glass); }
+.home__genre-btn--active {
+  background: rgba(139,92,246,0.2); border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+.home__sort {
+  padding: var(--space-sm) var(--space-md); border-radius: var(--radius-md);
+  background: var(--bg-glass); border: 1px solid var(--border-subtle);
+  color: var(--text-secondary); font-size: var(--font-size-sm);
+  cursor: pointer; flex-shrink: 0;
+}
+.home__sort option { background: var(--bg-secondary); }
+.home__pagination {
+  display: flex; justify-content: center; align-items: center;
+  gap: var(--space-lg); margin-top: var(--space-2xl);
+}
+.home__page-btn {
+  padding: var(--space-sm) var(--space-xl); border-radius: var(--radius-full);
+  background: var(--bg-glass); border: 1px solid var(--border-glass);
+  color: var(--text-secondary); font-size: var(--font-size-sm); font-weight: 500;
+  transition: all var(--transition-fast);
+}
+.home__page-btn:hover:not(:disabled) {
+  color: var(--text-primary); border-color: var(--accent-primary);
+}
+.home__page-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+.home__page-info { font-size: var(--font-size-sm); color: var(--text-muted); }
+@media (max-width: 768px) {
+  .home__hero-title { font-size: var(--font-size-2xl); }
+  .home__filters { flex-direction: column; }
+}
