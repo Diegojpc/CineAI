@@ -17,6 +17,7 @@ frontend/dist/
 
 # Docker
 docker-compose.override.yml
+CLAUDE.md
 
 # IDE
 .vscode/
@@ -30,3 +31,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Docs
+docs/
